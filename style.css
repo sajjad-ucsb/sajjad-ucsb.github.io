@@ -147,11 +147,20 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 .exp-logo {
   flex-shrink: 0; width: 52px; height: 52px; border-radius: 12px;
   display: flex; align-items: center; justify-content: center;
-  background: var(--accent);
+  background: var(--accent); overflow: hidden;
 }
 .exp-logo span {
   color: #fff; font-size: 12px; font-weight: 700;
   letter-spacing: 0.03em; text-align: center; line-height: 1;
+}
+.exp-logo-img {
+  background: #fff;
+  border: 1px solid var(--rule);
+  padding: 6px;
+}
+.exp-logo-img img {
+  width: 100%; height: 100%;
+  object-fit: contain; display: block;
 }
 .exp-body { flex: 1; }
 .exp-header {
@@ -184,7 +193,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 .pub-venue.journal  { background: #d1fae5; color: #065f46; }
 .pub-venue.iclr-ws  { background: #fce7f3; color: #9d174d; }
 .pub-venue.acl-ws   { background: #fce7f3; color: #9d174d; }
-.pub-venue.allerton { background: #e0f2fe; color: #0369a1; }
+.pub-venue.allerton { background: #134e4a; color: #ffffff; }
 .pub-venue.preprint { background: #f3e8ff; color: #6b21a8; }
 .pub-body { flex: 1; }
 .pub-title { font-weight: 600; font-size: 14.5px; color: var(--ink); margin: 0 0 4px; line-height: 1.45; }
