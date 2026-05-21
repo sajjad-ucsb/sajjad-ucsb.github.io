@@ -193,7 +193,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 .pub-venue.journal  { background: #d1fae5; color: #065f46; }
 .pub-venue.iclr-ws  { background: #fce7f3; color: #9d174d; }
 .pub-venue.acl-ws   { background: #fce7f3; color: #9d174d; }
-.pub-venue.allerton { background: #134e4a; color: #ffffff; }
+.pub-venue.allerton { background: #7c2d12; color: #ffffff; }
 .pub-venue.preprint { background: #f3e8ff; color: #6b21a8; }
 .pub-body { flex: 1; }
 .pub-title { font-weight: 600; font-size: 14.5px; color: var(--ink); margin: 0 0 4px; line-height: 1.45; }
