@@ -1,0 +1,124 @@
+/* ===== Base ===== */
+:root{
+  --ink:#1f2937;            /* text */
+  --muted:#4b5563;          /* subtle text */
+  --rule:#d1d5db;           /* borders */
+  --link:#1d4ed8;           /* links */
+  --bg:#ffffff;             /* page bg */
+  --font-base: "Roboto", Arial, sans-serif;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--bg);
+  font:15px/1.6 var(--font-base);
+}
+
+/* ===== Layout ===== */
+.sidebar{
+  position:fixed;
+  top:0; left:0; bottom:0;
+  width:220px;
+  border-right:1px solid var(--rule);
+  background:#f8fafc;
+}
+.sidebar-inner{ padding:16px 14px; }
+
+.content{
+  margin-left:220px;     /* make room for sidebar */
+  padding:20px 28px 60px;
+  max-width:1080px;
+}
+
+/* ===== Sidebar ===== */
+.site-name{
+  margin:0 0 10px 0;
+  font-size:22px;
+  font-family:var(--font-base);
+}
+.site-name a{ color:var(--ink); text-decoration:none; }
+
+.nav{ display:flex; flex-direction:column; gap:8px; }
+.nav-link{
+  color:var(--link);
+  text-decoration:none;
+  font-family:var(--font-base);
+}
+.nav-link:hover{ text-decoration:underline; }
+
+/* ===== Headings & rules ===== */
+h1,h2{
+  font-family:var(--font-base);
+  font-weight:700;
+  color:#1f2a44;
+  margin:0 0 12px 0;
+}
+h1{ font-size:32px; }
+h2{ font-size:24px; margin-top:26px; }
+
+hr{
+  border:0;
+  border-top:1px solid var(--rule);
+  margin:8px 0 20px;
+}
+
+/* ===== Intro block ===== */
+.intro{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:22px;
+  align-items:start;
+  margin-bottom:10px;
+}
+.avatar{
+  width:120px; height:120px; object-fit:cover;
+  border-radius:2px;
+  border:1px solid var(--rule);
+}
+.bio .role{ margin:0 0 8px 0; font-family:var(--font-base); }
+.links a{ color:var(--link); font-family:var(--font-base); }
+
+/* ===== Lists ===== */
+ul{ padding-left:18px; font-family:var(--font-base); }
+.news{ list-style: none; padding-left:0; margin:0; }
+.news li{ padding:6px 0; border-bottom:1px dashed #e5e7eb; font-family:var(--font-base); }
+.news .date{ font-weight:600; }
+
+/* ===== Footer ===== */
+.footer{ margin-top:28px; color:var(--muted); font-size:14px; font-family:var(--font-base); }
+
+/* ===== Responsive ===== */
+@media (max-width: 860px){
+  .sidebar{
+    position:static;
+    width:auto;
+    border-right:none;
+    border-bottom:1px solid var(--rule);
+  }
+  .content{ margin-left:0; padding:18px; }
+  .intro{ grid-template-columns:80px 1fr; gap:14px; }
+  .avatar{ width:80px; height:80px; }
+  h1{ font-size:26px; }
+}
+
+.hero {
+  background: url("ucsb.jpg") no-repeat center center;
+  background-size: cover;   /* make it fill the width */
+  height: 300px;            /* adjust height as you like */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;             /* text color */
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-family: var(--font-heading);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* readability */
+  margin: 0;
+}
+
+body { background: #f0f4ff !important; }
