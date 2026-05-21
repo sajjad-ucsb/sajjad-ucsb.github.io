@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- Hero banner -->
   <div class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -20,7 +19,6 @@
 
   <div class="page-wrap">
 
-    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-inner">
         <h1 class="site-name"><a href="index.html">Sajjad<br>Ghiasvand</a></h1>
@@ -43,7 +41,6 @@
       </div>
     </aside>
 
-    <!-- Main content -->
     <main class="content">
 
       <section id="about" class="section intro-section">
@@ -52,12 +49,11 @@
           <div class="bio">
             <h1 class="bio-name">Sajjad Ghiasvand</h1>
             <p class="bio-role">PhD Student, Electrical &amp; Computer Engineering</p>
-            <p class="bio-affil">University of California, Santa Barbara &mdash; GPA 3.97/4</p>
+            <p class="bio-affil">University of California, Santa Barbara</p>
             <div class="bio-links">
               <a href="https://scholar.google.com/citations?hl=en&user=zVMSi40AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener" class="badge">Google Scholar</a>
               <a href="https://www.linkedin.com/in/sajjad-ghiasvand/" target="_blank" rel="noopener" class="badge">LinkedIn</a>
               <a href="https://github.com/sajjad-ucsb" target="_blank" rel="noopener" class="badge">GitHub</a>
-
             </div>
           </div>
         </div>
@@ -70,11 +66,11 @@
           </p>
           <p>My research spans text-based and multimodal large language models, with emphasis on:</p>
           <ul class="interest-list">
-            <li>Personalization of LLMs and VLMs</li>
-            <li>Efficient fine-tuning of LLMs and VLMs</li>
-            <li>LLM post-training &amp; imitation learning</li>
-            <li>Federated and decentralized learning</li>
-            <li>Robust machine learning</li>
+            <li><span class="bullet">&rsaquo;</span>Personalization of LLMs and VLMs</li>
+            <li><span class="bullet">&rsaquo;</span>Efficient fine-tuning of LLMs and VLMs</li>
+            <li><span class="bullet">&rsaquo;</span>LLM post-training &amp; imitation learning</li>
+            <li><span class="bullet">&rsaquo;</span>Federated and decentralized learning</li>
+            <li><span class="bullet">&rsaquo;</span>Robust machine learning</li>
           </ul>
           <p class="collab-note">Feel free to reach out if you are interested in discussing a collaboration!</p>
         </div>
@@ -83,6 +79,10 @@
       <section id="news" class="section">
         <h2 class="section-title">News</h2>
         <ul class="news">
+          <li>
+            <span class="date-badge">Jun 2026</span>
+            <span>Started a Research Internship at <strong>Higharc</strong>, working on vision-language models for agentic home design editing.</span>
+          </li>
           <li>
             <span class="date-badge">Mar 2026</span>
             <span><em>"Few-Shot Adversarial Low-Rank Fine-Tuning of Vision-Language Models"</em> accepted to Trustworthy AI Workshop at ICLR 2026.</span>
@@ -93,7 +93,7 @@
           </li>
           <li>
             <span class="date-badge">Aug 2025</span>
-            <span>Started an internship as ML Intern at <strong>Handshake AI</strong> (joint project with OpenAI).</span>
+            <span>Started an ML Internship at <strong>Handshake AI</strong> (joint project with OpenAI).</span>
           </li>
           <li>
             <span class="date-badge">May 2025</span>
@@ -113,42 +113,49 @@
       <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <ul class="exp-list">
+
           <li class="exp-item">
-            <div class="exp-meta">
-              <span class="exp-date">Jun 2026 &ndash; Sep 2026</span>
+            <div class="exp-logo">
+              <img src="https://logo.clearbit.com/higharc.com" alt="Higharc logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="exp-logo-fallback" style="display:none">H</div>
             </div>
             <div class="exp-body">
-              <p class="exp-title">Research Intern &mdash; <strong>Higharc</strong></p>
-              <p class="exp-desc">Built data pipelines for structured architectural datasets; adapted vision-language models for agentic home design editing. Implemented fine-tuning and preference optimization pipelines, developed evaluation suites for layout validity and instruction-following accuracy.</p>
+              <div class="exp-header">
+                <p class="exp-title">Research Intern &mdash; <strong>Higharc</strong></p>
+                <span class="exp-date">Jun 2026 &ndash; Sep 2026</span>
+              </div>
+              <p class="exp-desc">Built data pipelines for structured architectural datasets; adapted vision-language models for agentic home design editing. Implemented fine-tuning and preference optimization pipelines and developed evaluation suites for layout validity and instruction-following accuracy.</p>
             </div>
           </li>
+
           <li class="exp-item">
-            <div class="exp-meta">
-              <span class="exp-date">Aug &ndash; Nov 2025</span>
+            <div class="exp-logo">
+              <img src="https://logo.clearbit.com/joinhandshake.com" alt="Handshake logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="exp-logo-fallback" style="display:none">HS</div>
             </div>
             <div class="exp-body">
-              <p class="exp-title">Machine Learning Intern &mdash; <strong>Handshake AI</strong> <span class="exp-note">(Joint with OpenAI)</span></p>
+              <div class="exp-header">
+                <p class="exp-title">Machine Learning Intern &mdash; <strong>Handshake AI</strong> <span class="exp-note">(Joint with OpenAI)</span></p>
+                <span class="exp-date">Aug &ndash; Nov 2025</span>
+              </div>
               <p class="exp-desc">Leveraged a paper-to-code pipeline to convert ICLR papers into runnable PyTorch implementations; designed evaluation rubrics and graded LLM-generated code.</p>
             </div>
           </li>
+
           <li class="exp-item">
-            <div class="exp-meta">
-              <span class="exp-date">Sep 2023 &ndash; Present</span>
+            <div class="exp-logo">
+              <img src="https://logo.clearbit.com/ucsb.edu" alt="UCSB logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="exp-logo-fallback" style="display:none">UCSB</div>
             </div>
             <div class="exp-body">
-              <p class="exp-title">Research Assistant &mdash; <strong>InfoNet Lab, UCSB</strong></p>
+              <div class="exp-header">
+                <p class="exp-title">Research Assistant &mdash; <strong>UC Santa Barbara</strong></p>
+                <span class="exp-date">Sep 2023 &ndash; Present</span>
+              </div>
               <p class="exp-desc">Developed low-rank and prompt-based adaptation methods for VLMs; designed communication-efficient federated fine-tuning algorithms using tensor decomposition; proposed decentralized and Byzantine-resilient optimization methods.</p>
             </div>
           </li>
-          <li class="exp-item">
-            <div class="exp-meta">
-              <span class="exp-date">Sep 2023 &ndash; Present</span>
-            </div>
-            <div class="exp-body">
-              <p class="exp-title">Teaching Assistant &mdash; <strong>UCSB</strong></p>
-              <p class="exp-desc">Probabilistic Machine Learning (S'26), Stochastic Processes (F'24), Signal Analysis (W'24, S'24, S'25).</p>
-            </div>
-          </li>
+
         </ul>
       </section>
 
@@ -180,7 +187,7 @@
             </div>
           </li>
           <li class="pub-item">
-            <div class="pub-venue workshop">Workshop</div>
+            <div class="pub-venue iclr-ws">ICLR Workshop</div>
             <div class="pub-body">
               <p class="pub-title">Few-Shot Adversarial Low-Rank Fine-Tuning of Vision-Language Models</p>
               <p class="pub-authors"><strong>S. Ghiasvand</strong>, H. E. Oskouie, M. Alizadeh, R. Pedarsani</p>
@@ -196,7 +203,7 @@
             </div>
           </li>
           <li class="pub-item">
-            <div class="pub-venue workshop">Workshop</div>
+            <div class="pub-venue acl-ws">ACL Workshop</div>
             <div class="pub-body">
               <p class="pub-title">Decentralized Low-Rank Fine-Tuning of Large Language Models</p>
               <p class="pub-authors"><strong>S. Ghiasvand</strong>, M. Alizadeh, R. Pedarsani</p>
