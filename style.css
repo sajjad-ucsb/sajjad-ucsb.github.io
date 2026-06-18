@@ -206,6 +206,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 .pub-venue.conf     { background: #dbeafe; color: #1e40af; }
 .pub-venue.journal  { background: #d1fae5; color: #065f46; }
 .pub-venue.iclr-ws  { background: #fce7f3; color: #9d174d; }
+.pub-venue.eccv-ws  { background: #fce7f3; color: #9d174d; }
 .pub-venue.acl-ws   { background: #fce7f3; color: #9d174d; }
 .pub-venue.allerton { background: #e0e7ff; color: #3730a3; }
 .pub-venue.preprint { background: #f3e8ff; color: #6b21a8; }
